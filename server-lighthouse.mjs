@@ -4,7 +4,7 @@ import lighthouse from "lighthouse";
 import cors from "cors";
 
 const app = express();
-const PORT = 3003;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 
@@ -86,5 +86,5 @@ function extractIssues(audits) {
 }
 
 app.listen(PORT, () => {
-  console.log(`Lighthouse API running on http://localhost:${PORT}`);
+  console.log(`Lighthouse microservice running on port ${PORT}`);
 });

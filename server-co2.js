@@ -4,7 +4,7 @@ const { co2 } = require("@tgwf/co2");
 const cors = require("cors");
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 
@@ -105,5 +105,5 @@ app.get("/co2", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`CO2 API is running on http://localhost:${PORT}`);
+  console.log(`CO2 microservice listening on port ${PORT}`);
 });

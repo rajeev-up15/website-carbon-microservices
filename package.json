@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:co2": "node server-co2.js",
+    "start:lighthouse": "node server-lighthouse.mjs",
+    "start:all": "concurrently \"npm run start:co2\" \"npm run start:lighthouse\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
   },
   "keywords": [],
   "author": "",
