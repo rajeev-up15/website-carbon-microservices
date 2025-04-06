@@ -1,0 +1,21 @@
+{
+  "name": "website-carbon-microservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tgwf/co2": "^0.16.6",
+    "axios": "^1.8.2",
+    "chrome-launcher": "^1.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "lighthouse": "^12.4.0",
+    "puppeteer": "^24.4.0"
+  }
+}
